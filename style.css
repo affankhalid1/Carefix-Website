@@ -1,0 +1,420 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root{
+    --navcolor:greenyellow;
+    --navelementhover:black;
+    --navelements:green;
+    --maintextcolor1:green;
+    --maintextcolor2: rgb(134, 208, 23);
+    --firstparatextcolor:grey;
+    --formbodycolor:black;
+    --formmaintext:white;
+    --formsubmitcolor: rgb(167, 251, 41);
+    --formsubmithover: rgb(121, 197, 6);
+    --secondsectionbg:rgba(226, 226, 226, 0.491);
+    --Booknowtxtcolor:white;
+    --Booknowbg:black;
+    --Booknowhoverbg: greenyellow;
+    --Booknowhovercolor:black;
+    --insidetxtco: #990000;
+    --5thsecbg:rgba(226, 226, 226, 0.491);
+}
+body{
+    overflow-x: hidden;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul li{
+    list-style : none;
+}
+nav{
+    position: sticky;
+    z-index: 10;
+    top: 0px;
+    background-color: var(--navcolor);
+    width: 82vw;
+    height: 80px;
+    margin:  10px auto;
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+.right ul{
+    display: flex;
+    gap: 40px;
+    padding-top: 25px;
+    font-size: 18px;
+    color:var(--navelements);
+}
+.right ul :hover{
+    color: var(--navelementhover);
+}
+.logo img{
+    margin-top: 10px;
+}
+.right ul li{
+    padding-top: 12px;
+}
+.right ul li:nth-child(6){
+    position: absolute;
+    left: 90%;
+    top: 15px;
+}
+.firstsec{
+    height: 57vh;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    max-width: 80vw;
+    margin: 80px auto;
+    position: relative;
+}
+.first span{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.first span:nth-child(1){
+    color:var(--maintextcolor1);
+}
+.first span:nth-child(2){
+    color:var(--maintextcolor2);
+    padding-bottom: 30px;
+}
+.two{
+   
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        max-width: 50vw;
+      
+}
+.two span:nth-child(1){
+    padding-top: 15px;
+    font-size: 17px;
+    color: var(--firstparatextcolor);
+    font-weight: 600;
+}
+.two span:nth-child(2){
+    color: var(--firstparatextcolor);
+}
+.box{
+    border: 3px solid var(--formbodycolor);
+    background-color: var(--formbodycolor);
+    border-radius: 30px;
+    width: 400px;
+    height: 450px;
+    position: absolute;
+    top: 10px;
+    right: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box div:nth-child(1){
+    color: var(--formmaintext);
+    text-align: center;
+    padding-top: 40px;
+    font-size: 28px;
+    font-weight: bolder;
+    font-family: poppins;
+}
+.box input{
+    padding: 10px 80px 10px 15px;
+    border-radius: 10px;
+    font-size: 17px;
+    margin-top: 15px ;
+    justify-content: center;
+    display: flex;
+    border: 2px solid black;
+
+}
+#Address{
+    margin-bottom: 20px;
+}
+#submit{
+    font-family: poppins;
+    padding: 10px 70px;
+    border-radius: 10px;
+    font-size: 17px;
+    margin-top: 25px ;
+    margin: auto;
+    background-color:var(--formsubmitcolor);
+    border: 2px solid black;
+    font-weight: 600;
+}
+#submit:hover{
+    background-color:var(--formsubmithover);
+}
+
+.secondsec {
+    background-color: var(--secondsectionbg);
+   height: 140vh;
+    
+}
+.secondsec h1{
+    padding-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: poppins;
+}
+.text{
+    text-align: center;
+    padding-top: 8px;
+    font-family: poppins;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 70vw;
+    margin: auto;
+    justify-content: center;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box1 img{
+    position: relative;
+    bottom: 18px;
+    padding: auto;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    max-width: 55vw;
+    max-height: 60vh;
+    row-gap: 25px;
+    column-gap: 10px;
+    justify-content: center;
+    margin: auto;
+}
+.item2{
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    width: 250px;
+    border-radius: 15px ;   
+     border: 2px solid black;
+    margin-top: 30px;
+}
+.item2-1{
+    background-image: url(images/Car\ Cleaning\ pic.jpg);
+}
+.textsecond  h1{
+    padding-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: poppins;
+}
+.textsec{
+    text-align: center;
+    padding-top: 8px;
+    font-family: poppins;
+}
+.box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.Book_Now{
+    background-color:var(--Booknowbg) ;
+    color: var(--Booknowtxtcolor);
+    height: 40px;
+    font-size: 18px;
+    width: 80%;
+    border-radius: 5px;
+    border: 2px solid black;
+    position: absolute;
+    top: 200px;
+}
+.Book_Now:hover{
+    background-color:var(--Booknowhoverbg) ;
+    color: var(--Booknowhovercolor);
+    font-weight: bold;
+    border: 0px ;
+}
+.intext2{
+    font-weight: bolder ;
+    font-size: 25px;
+    font-family: poppins;
+    color:var(--insidetxtco) ;
+    display: flex;
+    position: absolute;
+    top: 110px;
+    text-align: center;
+}
+.c4{
+    top: 90px;
+    line-height: 30px;
+
+}
+.thirdsec{
+    padding-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: poppins;
+}
+.textthird{
+    text-align: center;
+    padding-top: 8px;
+    font-weight: normal;
+    font-family: poppins;
+}
+.grid3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 80vw;
+    gap: 50px;
+    margin: auto;
+}
+.ytext {
+    font-weight: normal;
+    font-size: 14px;
+    padding-top: 12px;
+}
+.y-description h3{
+    padding-top: 10px;
+}
+.whatsappfixed{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.whatsappfixed :hover{
+    color: aqua;
+}
+iframe{
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.forthsec{
+    max-height: 700px;
+}
+.forthsec img{
+    position: relative;
+    margin: 150px 100px 0px 220px;
+}
+.imagetxt {
+    position: relative;
+    bottom: 570px;
+    left: 650px;
+    font-family: poppins;
+    max-width: 800px;
+    
+}
+.imagetxt h1{
+    padding-bottom: 12px;
+}
+.imagetxt h4{
+    position: absolute;
+    left: 50px;
+}
+.box4sec {
+    width: 33px;
+    height: 36px;
+    background-image: url(keypointsIcons/policy.png);
+    object-fit: cover;
+    position: relative;
+    top: 28px;
+    
+}
+.b2{
+    width: 43px;
+    height: 33px;
+    background-image: url(keypointsIcons/affordable.png);
+    object-fit: cover;
+    position: relative;
+    top: 28px;
+    
+}
+.b3{
+    width: 40px;
+    height: 37px;
+    background-image: url(keypointsIcons/checked.png);
+    object-fit: cover;
+    position: relative;
+    top: 28px;
+    
+}
+.b4{
+    width: 38px;
+    height: 38px;
+    background-image: url(keypointsIcons/good-quality.png);
+    object-fit: cover;
+    position: relative;
+    top: 28px;
+    
+}
+.b5{
+    width: 38px;
+    height: 41px;
+    background-image: url(keypointsIcons/quality.png);
+    object-fit: cover;
+    position: relative;
+    top: 28px;
+    
+}
+.b6{
+    width: 38px;
+    height: 38px;
+    background-image: url(keypointsIcons/technology.png);
+    object-fit: cover;
+    position: relative;
+    top: 28px;
+   
+}.b7{
+    width: 38px;
+    height: 38px;
+    background-image: url(keypointsIcons/time-left.png);
+    object-fit: cover;
+    position: relative;
+    top: 28px;
+    
+}
+.sec5{
+    
+
+    
+}
+.sec5 h1{
+    margin-top: 100px;
+    text-align: center;
+    font-family: poppins;
+}
+.orglogo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    max-width: 70vw;
+    margin: auto;
+}
+.orlogo{
+    margin: auto;
+}
